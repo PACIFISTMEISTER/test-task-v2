@@ -3,5 +3,5 @@ package ru.reader;
 import java.io.IOException;
 
 public interface IDataReader {
-    String[] getSymbols() throws IOException;
+    char[] getSymbols() throws IOException;
 }

@@ -13,7 +13,7 @@ public class SetDataHolder implements IDataHolder {
     }
 
     @Override
-    public void addData(String s) {
-        resultSymbolSet.add(s);
+    public void addData(char s) {
+        resultSymbolSet.add(Character.toString(s));
     }
 }

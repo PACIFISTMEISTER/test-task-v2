@@ -20,11 +20,11 @@ public class Main {
         ICheck symbolCheck = new SymbolCheck();
         IDataHolder dataHolder = new SetDataHolder();
 
-        String[] symbols = dataReader.getSymbols();
+        char[] symbols = dataReader.getSymbols();
 
         while (symbols != null) {
 
-            for (String symbol : symbols) {
+            for (char symbol : symbols) {
                 if (symbolCheck.checkSymbol(symbol)) {
                     dataHolder.addData(symbol);
                 }

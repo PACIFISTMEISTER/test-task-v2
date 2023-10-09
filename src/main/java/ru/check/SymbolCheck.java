@@ -6,9 +6,9 @@ public class SymbolCheck implements ICheck {
     }
 
     @Override
-    public boolean checkSymbol(String symbol) {
+    public boolean checkSymbol(char symbol) {
 //приведение вспомогательных знаков(к примеру восклицательного) к upper case не изменяет строку
 // условие или для того чтобы учесть регистр
-        return !symbol.toUpperCase().equals(symbol) || !symbol.toLowerCase().equals(symbol);
+        return Character.isLetter(symbol);
     }
 }

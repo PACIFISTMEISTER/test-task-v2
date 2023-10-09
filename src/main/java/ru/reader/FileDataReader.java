@@ -14,10 +14,10 @@ public class FileDataReader implements IDataReader {
     }
 
     @Override
-    public String[] getSymbols() throws IOException {
+    public char[] getSymbols() throws IOException {
         String line = reader.readLine();
         if (line != null) {
-            return line.split("");
+            return line.toCharArray();
         } else {
             reader.close();
             return null;
