@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class Main {
 //в данном случае рассматриваю, что заглавные буквы != прописным A!=a
-//для того чтобы это исправить нужно всю строку привести либо к upper case либо к lower + удалить одно из условий в коде
+//для того чтобы это исправить нужно всю строку привести либо к upper case либо к lower
 
     public static void main(String[] args) throws IOException {
         String file = args[0];
